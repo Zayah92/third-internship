@@ -1,0 +1,30 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: black;
+  z-index: 100;
+   
+}
+
+.logo {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.logo-text {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.code {
+    background-color:black;
+    color: white;
+    padding: 8px 10px;
+    font-size: 8px;
+}
