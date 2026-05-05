@@ -210,3 +210,33 @@
     height: 200px;
   }
 }
+
+@media (max-width: 576px) {
+
+  .box1 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .box2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .box3 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .test__header { 
+    margin-left: 40px;
+  }
+  .center__input{
+    width: 200px;
+    font-size: 20px;
+  }
+  .center__label {
+    font-size: 14px;
+    left: 80%;
+  }
+}

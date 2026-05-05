@@ -221,3 +221,11 @@ justify-content: center;
   }
 
 }
+
+@media (max-width: 576px) {
+
+.summary__content__title {
+    font-size: 20px;
+}
+
+}

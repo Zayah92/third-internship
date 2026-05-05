@@ -226,16 +226,13 @@
   }
 
 
-  .hero__title {
+  .hero__title h1{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -70%);
     text-align: center;
     z-index: 2;
-  }
-
-  .hero__title h1 {
     font-size: 70px;
     line-height: 1.1;
   }
@@ -280,4 +277,29 @@
     height: 70%;
   }
 
+}
+
+@media (max-width: 576px) {
+  .hero__title h1 {
+    font-size: 50px;
+  }
+  
+  .hero__square {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 1px dotted grey;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    pointer-events: none;
+  }
+
+  .hero__square--bottom {
+    width: 140px;
+    height: 140px;
+  }
+  .hero__mobile--btn {
+    margin-top: 15px;
+  }
 }

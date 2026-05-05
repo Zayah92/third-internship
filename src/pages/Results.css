@@ -327,3 +327,39 @@
 }
 
 }
+
+@media (max-width: 576px) {
+
+  .result__header {
+    font-size: 10px;
+    margin-left: 10%;
+  }
+
+  .result__icon--left,
+.result__icon--right {
+  width: 70px;
+  height: 70px; 
+}
+.result__box1 {
+  width: 120px;
+  height: 120px;
+}
+
+.result__box2 {
+  width: 100px;
+  height: 100px;
+}
+
+.result__box3 {
+  width: 75px;
+  height: 75px;
+}
+
+.results__preview--box {
+
+  width: 70px;
+  height: 70px;
+  margin-top: 0;
+  top: 0;
+}
+}

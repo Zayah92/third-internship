@@ -103,3 +103,15 @@
   transform: translate(-50%, -50%) rotate(45deg) scale(1);
   opacity: 1;
 }
+
+@media (max-width: 576px) {
+.select__tile {
+  width: 100px;
+  height: 100px;
+}
+.select__diamond {
+  width: 220px;
+  height: 220px;
+}
+
+}

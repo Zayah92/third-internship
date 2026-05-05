@@ -55,7 +55,7 @@ return (
             className="footer__btn footer__btn--right"
             onClick={() => navigate("/summary")}
           >
-            <button className="btn primary">GET SUMMARY</button>
+            <button className="btn primary">SUMMARY</button>
             <div className="triangle__box">
               <svg viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon points="0,0 100,50 0,100" />
