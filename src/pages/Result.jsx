@@ -303,7 +303,7 @@ export default function Result() {
             <div className="camera-footer__list">
               <p>NEUTRAL EXPRESSION.</p>
               <p>FRONTAL POSE.</p>
-              <p>ADEQUATE LIGHTING</p>
+              <p>ADEQUATE LIGHTING.</p>
             </div>
           </div>
 
