@@ -14,7 +14,7 @@
   font-weight: 700;
 }
 
-/* orbit containers */
+
 .result__orbit {
   position: absolute;
   top: 50%;
@@ -65,7 +65,7 @@
   animation: resultRotate3 80s linear infinite;
 }
 
-/* animations */
+
 @keyframes resultRotate1 {
   from { transform: translate(-50%, -50%) rotate(0deg); }
   to   { transform: translate(-50%, -50%) rotate(360deg); }
@@ -81,7 +81,6 @@
   to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* icons */
 .result__icon--right,
 .result__icon--left {
   position: absolute;
@@ -109,7 +108,7 @@
   opacity: 0;
 }
 
-/* connecting lines */
+
 .line__icon--right {
   position: absolute;
   top: 100%;
@@ -153,7 +152,7 @@
   text-align: left;
 }
 
-/* preview */
+
 .results__preview {
   position: absolute;
   top: 60px;
@@ -181,7 +180,7 @@
   border-radius: 5px;
 }
 
-/* loading state */
+
 .result__loading {
   position: absolute;
   top: 50%;
@@ -205,11 +204,11 @@
   animation: resultRotate3 30s linear infinite;
 }
 
-/* ========================= */
-/* CAMERA (FINAL SYSTEM ONLY) */
-/* ========================= */
 
-/* FULL SCREEN CAMERA */
+/* CAMERA  */
+
+
+
 .camera-layout {
   position: fixed;
   top: 0;
@@ -219,14 +218,14 @@
   z-index: 5;
 }
 
-/* FULL VIDEO */
+
 .camera-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* LOADING CENTER */
+
 .camera-loading {
   position: absolute;
   top: 50%;
@@ -235,7 +234,7 @@
   text-align: center;
 }
 
-/* SHUTTER (right side) */
+
 .camera-shutter {
   position: absolute;
   right: 40px;
@@ -259,18 +258,8 @@
   margin: auto;
 }
 
-/* CANCEL */
-.camera-cancel {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: white;
-  border: none;
-  padding: 6px 10px;
-  cursor: pointer;
-}
 
-/* FOOTER OVERLAY */
+
 .camera-footer {
   position: absolute;
   bottom: 40px;
@@ -286,4 +275,55 @@
   justify-content: center;
   gap: 20px;
   margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+
+
+  .result__orbit--left,
+  .result__orbit--right {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0);
+  }
+
+
+  .result__orbit--left {
+    top: 30%;
+  }
+
+  .result__orbit--right {
+    top: 70%;
+  }
+.result__box1 {
+  width: 220px;
+  height: 220px;
+}
+
+.result__box2 {
+  width: 180px;
+  height: 180px;
+}
+
+.result__box3 {
+  width: 100px;
+  height: 100px;
+}
+.result__icon--left,
+.result__icon--right {
+  width: 100px;
+  height: 100px; 
+}
+
+.results__preview--box {
+
+  width: 100px;
+  height: 100px;
+}
+.result__text, 
+.line__icon--right,
+ .line__icon--left {
+  display: none;
+}
+
 }

@@ -77,7 +77,7 @@ export default function Test() {
           </div>
         </div>
 
-        {/* BACK BUTTON (LEFT) */}
+        {/* BUTTON (LEFT) */}
         <div
           className="footer__btn footer__btn--left"
           onClick={() => navigate("/")}
@@ -90,7 +90,7 @@ export default function Test() {
           <button className="btn primary">BACK</button>
         </div>
 
-        {/* PROCEED BUTTON (RIGHT) */}
+        {/* BUTTON (RIGHT) */}
         {step === 3 && (
           <div
             className="footer__btn footer__btn--right"

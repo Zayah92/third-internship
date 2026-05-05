@@ -125,3 +125,99 @@ justify-content: center;
   background: #e5e7eb;
   font-weight: 600;
 }
+
+@media (max-width: 992px) {
+
+ 
+  .summary__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 180px; 
+     padding-bottom: 120px;
+  }
+
+ 
+  .summary__content__quickfacts,
+  .summary__content__analysis,
+  .summary__content__details,
+  .race,
+  .age,
+  .gender {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+  }
+
+ 
+  .summary__content__quickfacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .race,
+  .age,
+  .gender {
+    flex: 1;
+    height: 80px;
+  }
+
+
+  .summary__content__analysis {
+    height: auto;
+    padding: 20px;
+  }
+
+
+  .progress-circle {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  .progress-inner {
+    width: 190px;
+    height: 190px;
+  }
+
+
+  .summary__content__details {
+    height: auto;
+    padding: 20px;
+  }
+
+  .race,
+  .age,
+  .gender {
+  margin: 0;
+}
+
+.summary__content__title {
+    font-size: 40px;
+}
+
+
+
+}
+@media (max-width: 992px) {
+
+  .summary__mobile-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .mobile--button {
+    position: static;
+  }
+
+}

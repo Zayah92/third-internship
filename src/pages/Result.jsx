@@ -18,7 +18,7 @@ export default function Result() {
   const [showCamera, setShowCamera] = useState(false);
   const [isCameraLoading, setIsCameraLoading] = useState(false);
 
-  // CAMERA INIT (WORKING VERSION)
+ 
   useEffect(() => {
     if (!showCamera) return;
 
@@ -122,8 +122,12 @@ export default function Result() {
 
         localStorage.setItem("analysisResult", JSON.stringify(fakeResponse));
 
-        setIsProcessing(false);
-        navigate("/select");
+       setIsProcessing(false);
+
+        setTimeout(() => {
+          alert("Image analyzed successfully!");
+          navigate("/select");
+        }, 300);
       }, 4000);
     }, 500);
   };
@@ -168,7 +172,7 @@ export default function Result() {
     <>
       <Navbar />
 
-      {/* NORMAL PAGE */}
+
       {!showCamera && (
         <section className="result">
           <p className="result__header">TO START ANALYSIS</p>
@@ -264,7 +268,7 @@ export default function Result() {
         </section>
       )}
 
-      {/* CAMERA FULL SCREEN */}
+     
       {showCamera && (
         <section className="camera-layout">
 

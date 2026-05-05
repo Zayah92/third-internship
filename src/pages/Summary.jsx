@@ -17,19 +17,16 @@ export default function Summary() {
     }
   }, []);
 
-  // ✅ set default selection based on AI prediction
   useEffect(() => {
     if (!data) return;
 
     if (activeTab === "race") setSelectedKey(data.race);
     if (activeTab === "age") setSelectedKey(data.age);
     if (activeTab === "gender") setSelectedKey(data.gender);
-
   }, [data, activeTab]);
 
   if (!data) return null;
 
-  // ✅ dynamic percent based on selection
   let percent = 0;
 
   if (activeTab === "race") {
@@ -87,15 +84,7 @@ export default function Summary() {
         {/* MIDDLE PANEL */}
         <div className="summary__content__analysis">
 
-          {activeTab === "race" && (
-            <h1 className="summary__result--title">{selectedKey}</h1>
-          )}
-          {activeTab === "age" && (
-            <h1 className="summary__result--title">{selectedKey}</h1>
-          )}
-          {activeTab === "gender" && (
-            <h1 className="summary__result--title">{selectedKey}</h1>
-          )}
+          <h1 className="summary__result--title">{selectedKey}</h1>
 
           <div
             className="progress-circle"
@@ -144,30 +133,35 @@ export default function Summary() {
 
       </div>
 
-      {/* BACK BUTTON */}
-      <div
-        className="footer__btn footer__btn--left"
-        onClick={() => navigate("/select")}
-      >
-        <div className="triangle__box">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon points="100,0 0,50 100,100" />
-          </svg>
-        </div>
-        <button className="btn primary">BACK</button>
-      </div>
+      
+      <div className="summary__mobile-footer">
 
-      {/* HOME BUTTON */}
-      <div
-        className="footer__btn footer__btn--right"
-        onClick={() => navigate("/")}
-      >
-        <button className="btn primary">Home</button>
-        <div className="triangle__box">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon points="0,0 100,50 0,100" />
-          </svg>
+        {/* BACK BUTTON */}
+        <div
+          className="footer__btn footer__btn--left mobile--button"
+          onClick={() => navigate("/select")}
+        >
+          <div className="triangle__box">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="100,0 0,50 100,100" />
+            </svg>
+          </div>
+          <button className="btn primary">BACK</button>
         </div>
+
+        {/* HOME BUTTON */}
+        <div
+          className="footer__btn footer__btn--right mobile--button"
+          onClick={() => navigate("/")}
+        >
+          <button className="btn primary">HOME</button>
+          <div className="triangle__box">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="0,0 100,50 0,100" />
+            </svg>
+          </div>
+        </div>
+
       </div>
     </>
   );

@@ -27,7 +27,7 @@
 
 
 
-/* base box (stacked) */
+/* base box */
 .box {
   position: absolute;
   top: 50%;
@@ -62,7 +62,7 @@
   animation: rotate3 80s linear infinite;
 }
 
-/* each rotates at different speed */
+
 @keyframes rotate1 {
   from { transform: translate(-50%, -50%) rotate(0deg); }
   to   { transform: translate(-50%, -50%) rotate(360deg); }
@@ -78,7 +78,7 @@
   to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* center input */
+
 .center__label {
     position: absolute;
     width: 100%;
@@ -111,7 +111,7 @@
   border: none;
 }
 
-/* footer button */
+
 
 .footer__btn {
   position: absolute;
@@ -191,4 +191,22 @@
   font-size: 14px;
   color: #6b7280;
   text-align: center;
+}
+
+@media (max-width: 992px) {
+
+  .box1 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .box2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .box3 {
+    width: 200px;
+    height: 200px;
+  }
 }
