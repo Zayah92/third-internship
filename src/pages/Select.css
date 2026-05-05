@@ -1,0 +1,105 @@
+.select__content {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.select__content__subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.select__diamond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.select__tile {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: #f0f1f2;
+  border: none;
+  cursor: pointer;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transform: rotate(45deg);
+}
+.select__tile::after {
+  content: attr(data-label);
+}
+
+.select__tile {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.select__tile > * {
+  transform: rotate(-45deg);
+}
+.select__tile--top {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -15%) rotate(45deg);
+  background-color: #e0e1e2;
+}
+
+.select__tile--bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 15%) rotate(45deg);
+  cursor: not-allowed;
+}
+
+.select__tile--left {
+  top: 50%;
+  left: 0;
+  transform: translate(-15%, -50%) rotate(45deg);
+  cursor: not-allowed;
+}
+
+.select__tile--right {
+  top: 50%;
+  right: 0;
+  transform: translate(15%, -50%) rotate(45deg);
+  cursor: not-allowed;
+}
+
+/* Add hover effect */
+.select__tile:hover {
+  background-color: #d0d1d2;
+  scale: 1.05;
+}
+.select__diamond::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 500px;
+  height: 500px;
+
+  transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  transform-origin: center;
+
+  border: 3px dotted #d3d4d6;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: transform 0.5s ease, opacity 0.2s ease-in-out;
+}
+.select__diamond:has(.select__tile:hover)::after {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  opacity: 1;
+}

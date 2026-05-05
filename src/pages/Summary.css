@@ -1,0 +1,127 @@
+.summary__content__title {
+    font-size: 70px;
+    font-weight: 400;
+   
+}
+.summary__content__subtitle {
+    font-weight: 300;
+}
+.race {
+width: 100px;
+height: 100px;
+background-color: #f2f1f1;
+margin: 10px;
+margin-top: 0;
+position: absolute;
+top: 30%;
+left: 10px;
+border-top: 2px solid black;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.age {
+width: 100px;
+height: 100px;
+background-color: #f2f1f1;
+margin: 10px;
+border-top: 2px solid black;
+position: absolute;
+top: 45%;
+left: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}   
+.gender {
+width: 100px;
+height: 100px;
+background-color: #f2f1f1;;
+margin: 10px;
+border-top: 2px solid black;
+position: absolute;
+top: 60%;
+left: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.summary__content__analysis{
+    position: absolute;
+    top: 30%;
+    left: 150px;
+    background-color: #f2f1f1;
+    width: 55%;
+    height: 400px;
+    border-top: 2px solid black;
+}
+
+.summary__content__details{
+    position: absolute;
+    top: 30%;
+    left: 68%;
+    background-color: #f2f1f1;
+    width: 30%;
+    height: 400px;
+    border-top: 2px solid black;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+.summary__result--title{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+
+
+.progress-circle {
+  position: absolute;
+  right: 40px;  
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  transition: background 0.4s ease;
+}
+
+.progress-inner {
+  width: 270px;
+  height: 270px;
+  background: #f2f1f1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.confidence-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.confidence-row:hover {
+  background: #f3f4f6;
+}
+
+.active-row {
+  background: #e5e7eb;
+  font-weight: 600;
+}
