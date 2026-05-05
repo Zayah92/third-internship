@@ -2,7 +2,7 @@ import "./Results.css";
 import Navbar from "../components/Navbar";
 import galleryIcon from "../assets/gallery-icon.webp";
 import cameraIcon from "../assets/camera-icon.webp";
-import lineIcon from "../assets/resscanline.webp";
+import lineIcon from "../assets/ResScanLine.webp";
 import { useNavigate } from "react-router-dom";
 import { useRef, useState, useEffect } from "react";
 
